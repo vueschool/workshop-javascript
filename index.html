@@ -2,10 +2,39 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Exercise 2 - Start</title>
+		<title>Exercise 2 - End</title>
 
 		<script>
-			// Your code goes here
+			// Step 1
+			function isTriangle(side1, side2, side3) {
+				return side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1;
+			}
+
+			// Step 2
+			function getDiscountedPrice(price, discountPercentage) {
+				const discountAmount = (price * discountPercentage) / 100;
+				return price - discountAmount;
+			}
+
+			// Step 3
+			function getGradeLetter(grade) {
+				if (grade >= 90) {
+					return 'A';
+				} else if (grade >= 80) {
+					return 'B';
+				} else if (grade >= 70) {
+					return 'C';
+				} else if (grade >= 60) {
+					return 'D';
+				} else {
+					return 'F';
+				}
+			}
+
+			// Testing the functions
+			console.log(isTriangle(3, 4, 5)); // Expected output: true
+			console.log(getDiscountedPrice(100, 20)); // Expected output: 80
+			console.log(getGradeLetter(85)); // Expected output: B
 		</script>
 	</head>
 	<body>
